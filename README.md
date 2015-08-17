@@ -14,19 +14,12 @@ Download the ZIP of files, and open up `syllabus.tex` in your favorite TeX edito
 
 #### Comfortable with Git?
 
-I've set `.gitignore` to ignore a semesters folder, so here's my workflow:
-
 * Clone the repo as your `master` branch
 * `git checkout semester-specific-branch-name` to make a new branch for
   the semester
-* Update `syllabus.tex` to fit your course.
+* Update `syllabus.tex` to fit your course, then build your PDF.
 
-## How to Contribute
-
-If you are comfortable with GitHub you are free to submit a Pull Request, or
-I'd probably be happy to give you edit privileges to the repo directly.
-
-### Who are you?...
+## Who are you?...
 
 I'm Steven Clontz. I'm a mathematician, professor, developer, and
-puzzler. I have a website. <http://www.stevenclontz.com>
+puzzler. I have a website. <http://stevenclontz.com>
