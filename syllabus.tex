@@ -63,11 +63,11 @@ TR 1530-1645 (002)
 }
   % Final exam time (line 1)
 \newcommand{\FinalExamOne}{
-Fri 2015/12/18 1100 (001)
+Fri 2015/12/18 1100-1330 (001)
 }
   % Final exam time (line 2)
 \newcommand{\FinalExamTwo}{
-Thu 2015/12/17 1400 (002)
+Thu 2015/12/17 1400-1630 (002)
 }
   % Number of credit hours
 \newcommand{\CreditHrs}{
@@ -82,30 +82,26 @@ Technical Calculus with Analytic Geometry
 % Course Description
 \newcommand{\CourseDesc}{
 Intended for students majoring in Engineering Technology.
-Elements of differential and integral calculus for polynomial,
+Covers elements of differential and integral calculus for polynomial,
 rational, exponential, logarithmic and trigonometric functions,
 with applications to engineering.
 }
 
 % Grade Description
 \newcommand{\GradeDesc}{
-There will be four tests worth 100 points each. Homework will be due weekly.
-The homework average will count 100 points total. There will be a cumulative
-final worth 300 points or three test grades. The lowest test grade will be
-replaced by the final.
+There will be three tests worth 250 points each. The final exam is also
+worth 250 points, and replaces all lower test grades.
 }
 
 % Grade Distribution
   % Table partitioning credit for each assignment
 \newcommand{\GradeDist}{
 \begin{tabular}{|l|l|}\hline
-Test 1 & 100 \\
-Test 2 & 100 \\
-Test 3 & 100 \\
-Test 4 & 100 \\
-Homework & 100 \\
-Final Exam & 300 \\\hline\hline
-Total & 800\\\hline
+Test 1 & \(250\) \\
+Test 2 & \(250\) \\
+Test 3 & \(250\) \\
+Final Exam & \(250^\star\) \\\hline\hline
+Total & 1000\\\hline
 \end{tabular}
 }
 
@@ -114,27 +110,28 @@ Total & 800\\\hline
 \newcommand{\LetterAssign}{
 \begin{tabular}{|c|c|c|}\hline
 \bf{Grade} & \bf{Points} & \bf{Percentage}\\\hline\hline
-A & 720-800 & 90\% - 100\%\\
-B & 640-719 & 80\% - 89\%\\
-C & 560-639 & 70\% - 79\%\\
-D & 480-559 & 60\% - 69\%\\
-F & 0-479 & 0\% - 59\%\\\hline
+A & 900-1000 & 90\% - 100\%\\
+B & 800-899 & 80\% - 89\%\\
+C & 700-799 & 70\% - 79\%\\
+D & 650-699 & 65\% - 69\%\\
+F & 0-649 & 0\% - 64\%\\\hline
 \end{tabular}
 }
 
 % Makeup Policy
 \newcommand{\MakeUp}{
-Arrangements to make up missed major exams due to excused absences
-must be initiated by the student within one week from the end of the
-excused absence.
+Tests which are missed for any reason are replaced with the score on the
+final exam. The final exam may only be made up with written documentation
+from a medical professional that the exam was missed due to a medical
+emergency.
 }
 
 % Disability/Accomodations Policy
-\newcommand{\ADA}{
+\newcommand{\Accomodations}{
 UNC Charlotte is committed to access to education.
-Students in this course seeking accommodations to disabilities must
+Students in this course seeking accommodations for disabilities must
 first consult with the Office of Disability Services and follow the
-instructions of that office for obtaining accommodations.
+instructions of that office to obtain accommodations.
 }
 
 % Academic Honesty
@@ -152,7 +149,7 @@ will be reported to the Dean of Students Office.
   % (for example, giving one less exam due to time constraints),
   % but you should present the changed policy in writing to your class.
 \newcommand{\ContPlan}{
-If normal class and/or lab activities are disrupted due to unanticipated
+If normal class is disrupted due to unanticipated
 circumstances, the syllabus and other course plans and assignments may be
 modified. If this occurs, an addendum to your
 syllabus and/or course assignments will be provided by the instructor.
@@ -168,14 +165,45 @@ syllabus and/or course assignments will be provided by the instructor.
   % \ExtraSections variable.
   % Set the variable as empty to remove these sections.
 \newcommand{\ExtraSections}{
+\textbf{Attendance:} \\
+Attendance will be recorded at the beginning of each class. Students
+who enter after roll is called are marked as absent. Any student who
+disrupts class will be asked to leave and will be marked as absence.
+
+If you need to miss
+class for a reasonable conflict (athletics, etc.) you are encouraged to
+have the absence excused by providing documentation to
+Dr. Clontz at least one week in advance.
+If you miss class due to illness, you must email Dr. Clontz as soon as
+possible and provide written
+documentation from a medical professional within one week of the absence
+for the absence to be considered excused.
+
+\textbf{Homework:} \\
+Homework will be assigned throughout class, and is highly recommended.
+The instructor will give feedback on worked homework problems during office
+hours.
+
+\textbf{Office Hours:} \\
+Students are encouraged to meet with Dr. Clontz during office hours
+for help on assigned homework and other feedback on class material.
+To meet during office hours, a student should have no more than two unexcused
+absences and bring previously attempted solutions to relevant homework problems.
+
 \textbf{Calculators:} \\
-A basic scientific calculator will be allowed on all tests and homework.
-A cell phone app cannot be used
-as a calculator.  Graphing calculators are not permitted.
+Calculators are not necessary and not allowed on any test or exam. Note that
+it's possible homework assigned from the textbook may be tedious without the
+aid of a calculator.
+
+\textbf{Open-note policy:} \\
+Students may use handwritten notes during tests and exams that they have
+prepared themselves. Students using notes may be required to turn them
+in with the exam and/or prove that the handwriting is their own.
+All other documents/devices must be put away during the entire examination.
 
 \textbf{Moodle:}\\
-Much of the content for this course, as well as all grades, will be posted
-online to the course learning management system Moodle.
+Grades and possibly other materials will be posted
+online to Moodle.
 }
 
 % PostScript
@@ -183,12 +211,12 @@ online to the course learning management system Moodle.
   % drive home an important point.
   % Set \PostScript as empty to remove this final comment.
 \newcommand{\PostScript}{
-\textbf{ELECTRONIC DEVICES ARE NOT ALLOWED IN CLASS UNLESS GIVEN EXPLICIT
-PERMISSION BY THE INSTRUCTOR.}
+% \textbf{ELECTRONIC DEVICES ARE NOT ALLOWED IN CLASS UNLESS GIVEN EXPLICIT
+% PERMISSION BY THE INSTRUCTOR.}
 
-How to update this document: Full instructions are available at \\
-\url{https://github.com/StevenClontz/syllabus} \\
-(Scroll down to view README.md)
+% How to update this document: Full instructions are available at \\
+% \url{https://github.com/StevenClontz/syllabus} \\
+% (Scroll down to view README.md)
 }
 
 
