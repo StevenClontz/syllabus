@@ -21,5 +21,5 @@ Download the ZIP of files, and open up `syllabus.tex` in your favorite TeX edito
 
 ## Who are you?...
 
-I'm Steven Clontz. I'm a mathematician, professor, developer, and
+I'm Steven Clontz. I'm a mathematician, professor, programmer, and
 puzzler. I have a website. <http://stevenclontz.com>
