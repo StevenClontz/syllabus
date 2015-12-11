@@ -15,15 +15,15 @@
 % Title stuff
   % Course Code, ex: MATH 1000-080
 \newcommand{\CourseCode}{
-MATH 2242-001
+MATH 3142-001
 }
   % Course Name
 \newcommand{\CourseName}{
-Calculus IV
+Advanced Calculus of Several Variables
 }
   % Semester
 \newcommand{\Semester}{
-Fall 2015
+Spring 2016
 }
 
 % Instructor data
@@ -51,18 +51,18 @@ sclontz5@uncc.edu
 % Course data
   % Classroom location
 \newcommand{\ClassLoc}{
-Friday 132
+Fretwell 306
 }
   % Lecture times (line 1)
 \newcommand{\ClassTimeOne}{
-TR 1700-1815
+TR 1230-1345
 }
 %   % Lecture times (line 2)
 % \newcommand{\ClassTimeTwo}{
 % }
   % Final exam time (line 1)
 \newcommand{\FinalExamOne}{
-Tue 2015/12/15 1700-1930
+Thu 2016/05/12 1100-1330
 }
 %   % Final exam time (line 2)
 % \newcommand{\FinalExamTwo}{
@@ -73,54 +73,71 @@ Tue 2015/12/15 1700-1930
 }
   % Textbook to be used
 \newcommand{\Text}{
-Vector Calculus (Marsden)
+Advanced Calculus (Fitzpatrick)
 }
 
 
 % Course Description
 \newcommand{\CourseDesc}{
-Covers parametric curves and surfaces, vector fields, line and surface
-integrals; Green's theorem, Divergence theorem, Stoke's theorem and
-applications.
+Multivariable analysis, including (but not limited to) some subset
+of the following topics:
+Continuity and differentiability of functions of several variables,
+inverse and implicit function theorems, integration, Fubini's theorem,
+change of variables, the classical integral theorems of Gauss, Green and
+Stokes and their generalizations.
 }
 
+\newcommand{\mc}{\mathcal}
 % Grade Description
 \newcommand{\GradeDesc}{
-There will be three tests worth 250 points each. The final exam is also
-worth 250 points, and replaces all lower test grades.
+Let \(\mc A=4\), \(\mc B=3\), \(\mc C=2\), \(\mc D=1\),
+and \(\mc F=0\).
+
+During the semester, you will be assesed based on note checks \(N\),
+presentations \(P\), and a midterm \(M\).
+Each will be assigned a letter grade from the set \(\{\mc A,\mc B,\mc C,\mc F\}\),
+and your semester grade is calculated as
+\(S=\lfloor\frac{N+P+M}{3}\rfloor\).
+
+A final exam will be administered and given a letter grade \(X\) from
+the set \(\{\mc A,\mc B,\mc C,\mc F\}\).
+Your overall grade reported to the university is calculated as
+\(G=\lceil\frac{2S+3X}{5}\rceil\)
 }
 
-% Grade Distribution
-  % Table partitioning credit for each assignment
-\newcommand{\GradeDist}{
-\begin{tabular}{|l|l|}\hline
-Test 1 & \(250\) \\
-Test 2 & \(250\) \\
-Test 3 & \(250\) \\
-Final Exam & \(250^\star\) \\\hline\hline
-Total & 1000\\\hline
-\end{tabular}
-}
+% % Grade Distribution
+%   % Table partitioning credit for each assignment
+% \newcommand{\GradeDist}{
+% \begin{tabular}{|l|l|}\hline
+% Test 1 & \(250\) \\
+% Test 2 & \(250\) \\
+% Test 3 & \(250\) \\
+% Final Exam & \(250^\star\) \\\hline\hline
+% Total & 1000\\\hline
+% \end{tabular}
+% }
 
-% Letter Grade Assignment
-  % Table partitioning assignment of letter grades by percentage and points
-\newcommand{\LetterAssign}{
-\begin{tabular}{|c|c|c|}\hline
-\bf{Grade} & \bf{Points} & \bf{Percentage}\\\hline\hline
-A & 900-1000 & 90\% - 100\%\\
-B & 800-899 & 80\% - 89\%\\
-C & 700-799 & 70\% - 79\%\\
-D & 650-699 & 65\% - 69\%\\
-F & 0-649 & 0\% - 64\%\\\hline
-\end{tabular}
-}
+% % Letter Grade Assignment
+%   % Table partitioning assignment of letter grades by percentage and points
+% \newcommand{\LetterAssign}{
+% \begin{tabular}{|c|c|c|}\hline
+% \bf{Grade} & \bf{Points} & \bf{Percentage}\\\hline\hline
+% A & 900-1000 & 90\% - 100\%\\
+% B & 800-899 & 80\% - 89\%\\
+% C & 700-799 & 70\% - 79\%\\
+% D & 650-699 & 65\% - 69\%\\
+% F & 0-649 & 0\% - 64\%\\\hline
+% \end{tabular}
+% }
 
 % Makeup Policy
 \newcommand{\MakeUp}{
-Tests which are missed for any reason are replaced with the score on the
-final exam. The final exam may only be made up with written documentation
-from a medical professional that the exam was missed due to a medical
-emergency.
+If the midterm is missed for an excused reason, it will be replaced with the
+grade on the final. If the final is missed for an excused reason, a makeup
+will be scheduled as early as possible. Arrangements should be make with the
+professor if the note check or presentation grades are affected for an excused
+reason. As a rule, only written documentation from a medical professional will
+be accepted as an excuse without at least two weeks' advance notice.
 }
 
 % Disability/Accomodations Policy
@@ -162,46 +179,83 @@ syllabus and/or course assignments will be provided by the instructor.
   % \ExtraSections variable.
   % Set the variable as empty to remove these sections.
 \newcommand{\ExtraSections}{
+\textbf{Class structure:} \\
+This is an upper level mathematics course. As such, it's important for all
+students to be engaged in the writing and presentation of the material.
+As such, lectures by the professor will be augmented with many student
+presentations. Bringing a laptop to lecture is recommended
+as notes must be typeset in \LaTeX{} for submission.
+
+\textbf{Presentations:} \\
+The professor will provide an outline of the defintions, theorems, and problems
+(called a ``theorem sequence'')
+which will be updated throughout the course. Students are expected to read ahead
+in the textbook on these. The professor will lecture on some topics himself,
+and assign some topics as homework (to be included in each students' notes),
+but other topics will be presented by students in the class. Depending
+on the topic (usually asking for the proof of a theorem), the professor may
+ask for a volunteer, choose a specific student, or call on a student randomly.
+
+When called, the student may choose to not present if they are not prepared
+(or absent) at most twice during the semester without penalty. A letter grade
+from the set \(\{\mc A,\mc C,\mc F\}\) is assigned to each presentation.
+The professor may drop some individual
+presentation grades for students who present more often.
+Each students' overall presentation grade is an average of all individual
+presentation grades earned, rounded to the nearest integer in the set
+\(\{\mc A,\mc B,\mc C,\mc F\}\).
+
+\textbf{Note checks:} \\
+The theorem sequence will be provided with its \LaTeX{} source. Students must
+create a free account on Overleaf.com to typeset their own solutions and
+proofs to the problems and theorems covered in the sequence, and provide
+the professor with a link to their notes. The professor will regularly announce
+note checks; a letter grade will be assigned at the professor's discretion based
+upon completion of the notes and specifically chosen proofs or solutions.
+The professor may or may not inform the class which proofs or solutions will
+be graded before the note check occurs. A letter grade
+from the set \(\{\mc A,\mc B,\mc C,\mc F\}\) is assigned to each note check.
+Each students' overall note check grade is an average of all individual
+note check grades earned. rounded to the nearest integer in the set
+\(\{\mc A,\mc B,\mc C,\mc F\}\).
+
+IMPORTANT: plagarism is a violation
+of academic honesty and will be reported; do NOT copy-paste solutions from
+online or another student. You are allowed (actually, encouraged) to work
+with your colleagues on these problems, but all typed notes and solutions
+must be your original writing.
+
+\textbf{Midterm and Final:} \\
+The midterm and final are both in the same format, except that the final
+exam is longer. These exams are comprehensive over material covered so far
+in class. A short multiple choice portion will be given first, primarily
+testing knowledge about definitions and theorems. Following this, an
+open-note and open-book portion is given asking for solutions/proofs
+to several problems/theorems not assigned as part of the theorem sequence.
+
 \textbf{Attendance:} \\
-Attendance will be recorded at the beginning of each class. Students
-who enter after roll is called are marked as absent. Any student who
-disrupts class will be asked to leave and will be marked as absence.
+Attendance will not be formally taken every day, but is necessary due to
+required presentations.
 
 If you need to miss
 class for a reasonable conflict (athletics, etc.) you are encouraged to
 have the absence excused by providing documentation to
-Dr. Clontz at least one week in advance.
-If you miss class due to illness, you must email Dr. Clontz as soon as
+the professor at least two weeks in advance.
+If you miss class due to illness, you must email the professor as soon as
 possible and provide written
 documentation from a medical professional within one week of the absence
 for the absence to be considered excused.
 
-\textbf{Homework:} \\
-Homework will be assigned throughout class, and is highly recommended.
-The instructor will give feedback on worked homework problems during office
-hours.
-
 \textbf{Office Hours:} \\
-Students are encouraged to meet with Dr. Clontz during office hours
+Students are encouraged to meet with the professor during office hours
 for help on assigned homework and other feedback on class material.
-To meet during office hours, a student should have no more than two unexcused
-absences and bring previously attempted solutions to relevant homework problems.
-Office hours are not available the day of a test.
+Office hours are not available the day of an exam.
 
 \textbf{Calculators:} \\
-Calculators are not necessary and not allowed on any test or exam. Note that
-it's possible homework assigned from the textbook may be tedious without the
-aid of a calculator.
-
-\textbf{Open-note policy:} \\
-Students may use handwritten notes during tests and exams that they have
-prepared themselves. Students using notes may be required to turn them
-in with the exam and/or prove that the handwriting is their own.
-All other documents/devices must be put away during the entire examination.
+Calculators are not necessary and not allowed on any exam.
 
 \textbf{Moodle:}\\
-Grades, a class calendar, and possibly other materials will be posted
-online to Moodle.
+Many materials materials will be posted online to Moodle.
 }
 
 % PostScript
