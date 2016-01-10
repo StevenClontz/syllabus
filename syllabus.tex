@@ -90,19 +90,24 @@ Stokes and their generalizations.
 \newcommand{\mc}{\mathcal}
 % Grade Description
 \newcommand{\GradeDesc}{
-Let \(\mc A=4\), \(\mc B=3\), \(\mc C=2\), \(\mc D=1\),
-and \(\mc F=0\).
-
 During the semester, you will be assesed based on note checks \(N\),
-presentations \(P\), and a midterm \(M\).
-Each will be assigned a letter grade from the set \(\{\mc A,\mc B,\mc C,\mc F\}\),
+presentations \(P\), and a midterm \(M\),
 and your semester grade is calculated as
-\(S=\lfloor\frac{N+P+M}{3}\rfloor\).
+\(S=\frac{N+P+M}{3}\).
 
-A final exam will be administered and given a letter grade \(X\) from
-the set \(\{\mc A,\mc B,\mc C,\mc F\}\).
-Your overall grade reported to the university is calculated as
-\(G=\lceil\frac{2S+3X}{5}\rceil\)
+A final exam \(X\) will be administered, and
+your overall grade reported to the university is calculated as
+\(G=\max(\{\frac{2S+X}{3},\frac{S+2X}{3}\})\).
+
+
+\begin{tabular}{|c|c|}\hline
+\textbf{Letter Grade} & \textbf{Percentage}\\\hline\hline
+A & 90\% - 100\%\\
+B & 80\% - 89\%\\
+C & 70\% - 79\%\\
+D & 65\% - 69\%\\
+F & 0\% - 64\%\\\hline
+\end{tabular}
 }
 
 % % Grade Distribution
@@ -197,40 +202,42 @@ on the topic (usually asking for the proof of a theorem), the professor may
 ask for a volunteer, choose a specific student, or call on a student randomly.
 
 When called, the student may choose to not present if they are not prepared
-(or absent) at most twice during the semester without penalty. A letter grade
-from the set \(\{\mc A,\mc C,\mc F\}\) is assigned to each presentation.
+(or absent) at most twice during the semester without being assigned a
+\(0\) for the presentation. Otherwise, a grade
+from the set \(\{100,70,20\}\) is assigned for each presentation.
 The professor may drop some individual
 presentation grades for students who present more often.
 Each students' overall presentation grade is an average of all individual
-presentation grades earned, rounded to the nearest integer in the set
-\(\{\mc A,\mc B,\mc C,\mc F\}\).
+presentation grades earned.
 
 \textbf{Note checks:} \\
 The theorem sequence will be provided with its \LaTeX{} source. Students must
 create a free account on Overleaf.com to typeset their own solutions and
 proofs to the problems and theorems covered in the sequence, and provide
-the professor with a link to their notes. The professor will regularly announce
-note checks; a letter grade will be assigned at the professor's discretion based
-upon completion of the notes and specifically chosen proofs or solutions.
+the professor with a link to this Overleaf project.
+
+The professor will regularly announce
+note checks. A grade will be assigned at the professor's discretion based
+upon factors such as overall completion or correctness of specific
+proofs/solutions.
 The professor may or may not inform the class which proofs or solutions will
-be graded before the note check occurs. A letter grade
-from the set \(\{\mc A,\mc B,\mc C,\mc F\}\) is assigned to each note check.
+be graded before the note check occurs.
 Each students' overall note check grade is an average of all individual
-note check grades earned. rounded to the nearest integer in the set
-\(\{\mc A,\mc B,\mc C,\mc F\}\).
+note check grades earned.
 
 IMPORTANT: plagarism is a violation
-of academic honesty and will be reported; do NOT copy-paste solutions from
-online or another student. You are allowed (actually, encouraged) to work
+of academic honesty and will be reported; do NOT blindly copy solutions, e.g.
+from the book, online, another student.
+You are allowed (actually, encouraged) to work
 with your colleagues on these problems, but all typed notes and solutions
 must be your original writing.
 
 \textbf{Midterm and Final:} \\
 The midterm and final are both in the same format, except that the final
-exam is longer. These exams are comprehensive over material covered so far
-in class. A short multiple choice portion will be given first, primarily
-testing knowledge about definitions and theorems. Following this, an
-open-note and open-book portion is given asking for solutions/proofs
+exam is longer. These exams are comprehensive over material covered up
+to that point in class. A short multiple choice portion will be given first,
+primarily testing knowledge about definitions and theorems. Following this, an
+open-note and open-book portion will be given which asks for solutions/proofs
 to several problems/theorems not assigned as part of the theorem sequence.
 
 \textbf{Attendance:} \\
@@ -241,10 +248,12 @@ If you need to miss
 class for a reasonable conflict (athletics, etc.) you are encouraged to
 have the absence excused by providing documentation to
 the professor at least two weeks in advance.
-If you miss class due to illness, you must email the professor as soon as
-possible and provide written
-documentation from a medical professional within one week of the absence
-for the absence to be considered excused.
+If you miss class due to illness, you should check with the professor
+on your first day back to clear any possible missed presentations.
+If any other assessments are missed due to illness, you
+must email the professor as soon as possible and provide written
+documentation from a medical professional within one week of the assessment
+for it to be considered excused.
 
 \textbf{Office Hours:} \\
 Students are encouraged to meet with the professor during office hours
